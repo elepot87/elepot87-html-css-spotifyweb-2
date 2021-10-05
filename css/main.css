@@ -1,0 +1,101 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: red;
+  height: 100vh;
+}
+
+.section-content {
+  background-color: dodgerblue;
+  height: calc(100vh - 90px);
+}
+
+.footer {
+  background-color: yellow;
+  height: 90px;
+}
+
+/* Utilities */
+
+.flex-container {
+  display: flex;
+}
+
+/* Debug */
+
+.container-debug {
+  padding: 10px;
+}
+
+.footer .debug-box {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: calc(100% / 3 - 20px);
+  height: 60px;
+  margin: 0 10px;
+}
+
+.content-cover .debug-box {
+  width: calc(100% / 6 - 20px);
+  margin: 10px 10px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Main content */
+
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: orange;
+}
+
+.sidebar-content {
+  width: 100%;
+  padding: 16px;
+}
+
+.main-content {
+  width: calc(100% - 250px);
+  flex-direction: column;
+  overflow: auto;
+}
+
+.content-cover {
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.cta {
+  position: fixed;
+  top: 0;
+  right: 0;
+  text-align: right;
+  width: calc(100% - 250px);
+  background-color: white;
+}
+
+.main-nav {
+  margin-top: 4%;
+  text-align: center;
+}
+
+/* Ipotesi media query  */
+@media screen and (max-width: 1100px) {
+  .cta {
+    background-color: red;
+  }
+
+  .content-cover .debug-box {
+    width: calc(100% / 4 - 20px);
+    margin: 10px 10px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
